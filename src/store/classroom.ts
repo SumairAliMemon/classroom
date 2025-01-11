@@ -40,7 +40,6 @@ interface ClassroomState {
   addAnnouncement: (announcement: Announcement) => void;
 }
 
-// Sample data
 const sampleCourses: Course[] = [
   {
     id: '1',
@@ -55,6 +54,14 @@ const sampleCourses: Course[] = [
         dueDate: '2024-02-25',
         courseId: '1',
         status: 'pending'
+      },
+      {
+        id: 'a2',
+        title: 'Algorithm Analysis',
+        description: 'Write a paper on time complexity',
+        dueDate: '2024-03-01',
+        courseId: '1',
+        status: 'completed'
       }
     ],
     announcements: [
@@ -71,15 +78,40 @@ const sampleCourses: Course[] = [
     name: 'Data Structures',
     instructor: 'Prof. Johnson',
     color: 'bg-green-500',
-    assignments: [],
-    announcements: []
+    assignments: [
+      {
+        id: 'a3',
+        title: 'Binary Trees Implementation',
+        description: 'Implement a binary search tree in Python',
+        dueDate: '2024-03-05',
+        courseId: '2',
+        status: 'pending'
+      }
+    ],
+    announcements: [
+      {
+        id: 'an2',
+        content: 'Midterm exam scheduled for March 15th',
+        date: '2024-02-28',
+        courseId: '2'
+      }
+    ]
   },
   {
     id: '3',
     name: 'Web Development',
     instructor: 'Ms. Davis',
     color: 'bg-purple-500',
-    assignments: [],
+    assignments: [
+      {
+        id: 'a4',
+        title: 'React Portfolio Project',
+        description: 'Create a personal portfolio using React',
+        dueDate: '2024-03-10',
+        courseId: '3',
+        status: 'pending'
+      }
+    ],
     announcements: []
   },
   {
@@ -87,7 +119,16 @@ const sampleCourses: Course[] = [
     name: 'Database Management',
     instructor: 'Dr. Wilson',
     color: 'bg-yellow-500',
-    assignments: [],
+    assignments: [
+      {
+        id: 'a5',
+        title: 'SQL Query Optimization',
+        description: 'Optimize the given database queries',
+        dueDate: '2024-03-15',
+        courseId: '4',
+        status: 'completed'
+      }
+    ],
     announcements: []
   },
   {
@@ -95,7 +136,16 @@ const sampleCourses: Course[] = [
     name: 'Software Engineering',
     instructor: 'Prof. Brown',
     color: 'bg-red-500',
-    assignments: [],
+    assignments: [
+      {
+        id: 'a6',
+        title: 'System Design Document',
+        description: 'Create a detailed system design document',
+        dueDate: '2024-03-20',
+        courseId: '5',
+        status: 'pending'
+      }
+    ],
     announcements: []
   },
   {
@@ -103,7 +153,16 @@ const sampleCourses: Course[] = [
     name: 'Artificial Intelligence',
     instructor: 'Dr. Lee',
     color: 'bg-indigo-500',
-    assignments: [],
+    assignments: [
+      {
+        id: 'a7',
+        title: 'Neural Network Implementation',
+        description: 'Implement a basic neural network from scratch',
+        dueDate: '2024-03-25',
+        courseId: '6',
+        status: 'pending'
+      }
+    ],
     announcements: []
   }
 ];
